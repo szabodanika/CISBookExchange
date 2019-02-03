@@ -82,7 +82,7 @@ public class Seller extends User {
 	
 	//TODO: documentation
 	public void orderStatusUpdate(Order order) {
-		order.getBuyer().sendNotification(this.getName() + " has confirmed your order (" + order.getBook().getAuthor() + " - " + order.getBook().getTitle()+ ")");
+		order.getBuyer().sendNotification(this.getName() + " has confirmed your order.");
 	}
 	
 }

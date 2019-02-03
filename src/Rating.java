@@ -7,8 +7,8 @@ public class Rating {
     private Date date;
 
     public Rating(String user, int rating, String comment, Date date) throws Exception {
-        if(rating < 1 || rating > 10){
-            throw new Exception("Rating should be between 1 and 10");
+        if(rating < 1 || rating > 5){
+            throw new Exception("Rating should be between 1 and 5");
         }
         this.user = user;
         this.rating = rating;

@@ -1,35 +1,40 @@
+import java.util.ArrayList;
+import java.util.Date;
+
 public class Order {
 	/**
 	 * 
 	 */
-	private Book book;
+	private ArrayList<Book> books;
 	private Buyer buyer;
 	private Seller seller;
+	private Date date;
+	private boolean confirmed;
 	
 	/**
 	 * 
-	 * @param book
+	 * @param books
 	 * @param buyer
 	 * @param seller
 	 */
-	public Order(Book book, Buyer buyer, Seller seller) {
-		this.book = book;
+	public Order(ArrayList<Book> books, Buyer buyer, Seller seller) {
+		this.books = books;
 		this.buyer = buyer;
 		this.seller = seller;
 	}
 
 	/**
-	 * @return the book
+	 * @return the books
 	 */
-	public Book getBook() {
-		return book;
+	public ArrayList<Book> getBooks() {
+		return books;
 	}
 
 	/**
-	 * @param book the book to set
+	 * @param books the book to set
 	 */
-	public void setBook(Book book) {
-		this.book = book;
+	public void setBook(ArrayList<Book> books) {
+		this.books = books;
 	}
 
 	/**
